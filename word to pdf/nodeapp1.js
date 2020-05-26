@@ -1,6 +1,6 @@
 const express = require("express");
-const upload = require("express-fileupload")
-const port = 3000 || process.env.PORT
+const upload = require("express-fileupload");
+const port = process.env.PORT || 3000;
 const path = require("path");
 const libre = require('libreoffice-convert');
 const fs = require("fs")
@@ -29,10 +29,6 @@ app.post("/upload", (req,res) => {
                         fs.writeFileSync(`${__dirname}/converted/${req.files.ufile.name.substring(0,req.files.ufile.name.indexOf("."))}.pdf`, results)
                     }
                 })
-                
-                /*unoconv.convert(uploadPath, "pdf",(err, results) => {
-                    false.writeFile(`${__dirname}/converted/${req.files.ufile.name.substring(0,req.files.ufile.name.indexOf("."))}.pdf`, results)
-                })*/
             }
         }) 
     }

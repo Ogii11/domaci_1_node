@@ -1,0 +1,24 @@
+{
+  "name": "domaci_1_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodeapp1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ogii11/domaci_1_node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ogii11/domaci_1_node/issues"
+  },
+  "homepage": "https://github.com/Ogii11/domaci_1_node#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "libreoffice-convert": "^1.0.5"
+  }
+}

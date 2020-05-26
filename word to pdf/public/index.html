@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <h1>
+            Convert Word to PDF Documents online for FREE
+        </h1>
+        <h4>
+            Our online tools allows you to convert Word odcuments to PDF for free. No downloads required!
+        </h4>
+        <section>
+            <div>
+                <img class="word-to-pdf" src="./wtp.png" alt="Icon word to pdf">
+            </div>
+            <div class="actions">
+                <form action="upload" method="POST" enctype="multipart/form-data">
+                    <label class="action-button" for="fileup"><i class="fas fa-2x fa-file-upload"></i> &nbsp;&nbsp; Upload File!</label>
+                    <input type="file" onchange="uploadFile(event)" name="ufile" id="fileup">
+                </form>
+                <form action="download" method="GET">
+                    <button id="download-button" class="action-button" onclick="this.form.submit()">
+                        <i class="fas fa-2x fa-file-download"></i>&nbsp;&nbsp;Download
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="home.js"></script>
+</body>
+</html>

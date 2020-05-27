@@ -17,7 +17,7 @@ function toCSV(){
             detalji: e.substring(e.indexOf(", Crna Gora")+ 25 , e.indexOf("Detaljno")).replace(/\t|\n/g,""),
             link: e.substring(e.indexOf("link do stana:")+14,)
         }
-        var zaUpis =  `\n${oglas.oglasio}, ${oglas.brojSoba}, ${oglas.stambenaPovrsina}, ${oglas.cijena}, ${oglas.podrucje}, ${oglas.detalji}, ${oglas.link}`;
+        var zaUpis =  `\n${oglas.oglasio}; ${oglas.brojSoba}; ${oglas.stambenaPovrsina}; ${oglas.cijena}; ${oglas.podrucje}; ${oglas.lokacija} ; ${oglas.detalji}; ${oglas.link}`;
         fs.appendFile("./data.csv", zaUpis, (err)=> {
             if(err){
                 console.log(err)
